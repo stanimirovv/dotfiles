@@ -29,3 +29,32 @@ set cursorline
 
 " scroll will never go to the bottom 3 and first 3 lines of a file
 set scrolloff=3
+
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+
+   " bind K to grep word under cursor
+   nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+else
+   " if we don't have ag we will fallback to grep
+   command GREP :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
+   nnoremap K :GREP<Enter>
+endif
+
+set hlsearch
+nnoremap * *``
+highlight Pmenu ctermbg=darkgray ctermfg=white
+
+" Hotkeys for window resizing: ctrlw | ctrlw_ ctrlw=
+" [v]sp | b[n] - open buffer in split
+
+
+" Folding
+" zA toggle zc create zo open
+set foldmethod=indent   
+set foldnestmax=20
+set nofoldenable
