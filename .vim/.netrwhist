@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/bc/projects/chess-game/chess-game/gui/Images'
+let g:netrw_dirhist_2='/home/bc/projects/chess-game/chess-game/gui'
+let g:netrw_dirhist_3='/home/bc/projects/chess-game/chess-game'
+let g:netrw_dirhist_4='/home/bc/projects/chess-game'
+let g:netrw_dirhist_5='/home/bc/projects/chess-game/chess-game/ai'
+let g:netrw_dirhist_6='/home/bc/projects/dotfiles'
+let g:netrw_dirhist_7='/home/bc/projects/dotfiles/.git'
+let g:netrw_dirhist_8='/home/bc/projects/dotfiles'
+let g:netrw_dirhist_9='/home/bc/projects/gocode/src/github.com/golang/glog'
