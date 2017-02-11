@@ -58,3 +58,16 @@ highlight Pmenu ctermbg=darkgray ctermfg=white
 set foldmethod=indent   
 set foldnestmax=20
 set nofoldenable
+
+" CtrlP
+set foldmethod=indent   
+set foldnestmax=20
+set nofoldenable
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+" Change dir to current file dir. Useful if after a MRU you change the dir
+" root or project
+command CDC cd %:p:h
+
