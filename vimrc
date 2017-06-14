@@ -71,3 +71,5 @@ let g:ctrlp_working_path_mode = 'ra'
 " root or project
 command CDC cd %:p:h
 command CP CtrlP
+
+" cgn, vep
