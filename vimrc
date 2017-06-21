@@ -72,4 +72,12 @@ let g:ctrlp_working_path_mode = 'ra'
 command CDC cd %:p:h
 command CP CtrlP
 
+" greatly improves CtrlP speed
+let g:ctrlp_user_command = {
+    \ 'types': {
+        \ 1: ['.git', 'cd %s && git ls-files'],
+        \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+        \ },
+    \ 'fallback': 'find %s -type f'
+    \ }
 " cgn, vep
