@@ -81,3 +81,4 @@ let g:ctrlp_user_command = {
     \ 'fallback': 'find %s -type f'
     \ }
 " cgn, vep
+autocmd BufRead,BufNewFile   *.go set autoindent noexpandtab tabstop=4 shiftwidth=4
