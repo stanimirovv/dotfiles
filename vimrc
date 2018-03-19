@@ -82,3 +82,5 @@ let g:ctrlp_user_command = {
     \ }
 " cgn, vep
 autocmd BufRead,BufNewFile   *.go set autoindent noexpandtab tabstop=4 shiftwidth=4
+
+set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
