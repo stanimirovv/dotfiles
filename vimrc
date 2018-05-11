@@ -1,5 +1,5 @@
 syntax on
-colorscheme elflord
+colorscheme desert
 set nocompatible
 " This shows what you are typing as a command.  I love this!
 set showcmd
@@ -84,3 +84,4 @@ let g:ctrlp_user_command = {
 autocmd BufRead,BufNewFile   *.go set autoindent noexpandtab tabstop=4 shiftwidth=4
 
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
+set laststatus=2
