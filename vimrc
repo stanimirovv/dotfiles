@@ -85,3 +85,9 @@ autocmd BufRead,BufNewFile   *.go set autoindent noexpandtab tabstop=4 shiftwidt
 
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 set laststatus=2
+
+
+fu! Grep(searchFor)
+  execute ':silent :Dispatch :grep!' . a:searchFor . '| copen'
+endfunction
+
