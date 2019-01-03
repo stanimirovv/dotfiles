@@ -11,9 +11,6 @@ syntax enable
 " Spaces are better than a tab character
 set expandtab
 set smarttab
-" Who wants an 8 character tab?  Not me!
-set shiftwidth=3
-set softtabstop=3
 " Cool tab completion stuff
  set wildmenu
  set wildmode=list:longest,full
@@ -90,4 +87,10 @@ set laststatus=2
 fu! Grep(searchFor)
   execute ':silent :Dispatch :grep!' . a:searchFor . '| copen'
 endfunction
+
+" Who wants an 8 character tab?  Not me!
+set shiftwidth=4
+set softtabstop=4
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType perl setlocal ts=3 sts=3 sw=3
 
