@@ -94,3 +94,5 @@ set softtabstop=4
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType perl setlocal ts=3 sts=3 sw=3
 
+" Make you keyboard actually do something while you are switched to Cyrillic
+set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
